@@ -1,0 +1,15 @@
+app:
+  name: rbohne-poi-gateway-app
+  namespace: rbohne
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/rbohne-gateway
+  org: rhdh23-lab
+  name: rbohne-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rbohne/poi-gateway-app
+  tag: latest
